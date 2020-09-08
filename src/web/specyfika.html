@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Muay Thai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="Stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="jquery.js"></script>
+
+</head>
+<body onload="odliczanie(), zmien_slajd()">
+    <header>
+        <a href="index.html"><h1>Muay Thai</h1></a>
+    </header>
+    <br />
+    <menu>
+        <a href="#" class="expand" onclick="menu()">&equiv;</a>
+        <nav id="menu">
+            <ol>
+
+                <li><a href="specyfika.html" class="link">Historia</a></li>
+                <li><a href="specyfika.html#wspolczesnie" class="link">Współcześnie</a></li>
+                <li><a href="specyfika.html#techniki" class="link">Technika</a></li>
+                <li><a href="specyfika.html#efekty" class="link">Efekty</a></li>
+                <li><a href="index.php" class="link">Galeria</a></li>
+                <li>
+                    <a href="#" id="opcja_5">Zacznij już dziś!</a>
+                    <ul>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="https://www.google.com/maps/search/muay+thai/@54.373558,18.6067542,14z/data=!3m1!4b1" target="_blank">Kluby w pobliżu</a></li>
+                        <li><a href="kwestionariusz.html">Kwestionariusz</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </nav>
+        <br />
+        <br />
+    </menu>
+    <article onload="zmien_slajd()">
+        <a id="historia"><h2 class="naglowek">Historia</h2></a>
+        <p class="artykul_2">
+            Tajski boks (muay thai) to narodowy sport Tajlandii, o wielowiekowej tradycji, który ściśle łączy się z kulturą i historią tego kraju. Powstał prawdopodobnie w XIII wieku i początkowo uprawiali go żołnierze tajskiej armii w celach obronnych. Był także ulubionym sportem królów, a z czasem zaczął rozprzestrzeniać się wśród niższych warstw społecznych.
+        </p>
+        <p class="artykul_2">
+            W różnych częściach kraju organizowano zawody muay thai, które zawsze były wielkim wydarzeniem i skupiały uwagę wielu obserwatorów. Zwycięzcy otrzymywali honorowe tytuły i odznaczenia, które gwarantowały im dozgonny podziw i szacunek. Wtedy też narodził się cały rytuał zawodów muay thai – poprzedzał je specjalny taniec przed walką (waikhru), a w ich trakcie zawodnikom przygrywała tradycyjna melodia Sarama.
+        </p>
+        <a id="wspolczesnie"><h2 class="naglowek">Wspólcześnie</h2></a>
+        <img src="img/MT_7.webp" width="400" height="400" class="img_1" />
+        <p class="artykul_2">
+            Na początku XX wieku w formule tajskiego boksu zaszło wiele istotnych zmian. Przede wszystkim coraz częściej zaczęto zastępować owijacze (kaad chuek, czyli paski do obwiązywania dłoni) rękawicami bokserskimi. Było to spowodowane dążeniem do zmniejszenia urazowości muay thai. Zakazano także stosowania najbardziej brutalnych technik, takich jak uderzenia głową, kopnięcia w krocze, dźwignie, rzuty. Walki zaczęły odbywać się na ringach otoczonych linami, a zawodników podzielono na kategorie wagowe.
+        </p>
+
+        <p class="artykul_2">
+            Mimo wielu elementów zaczerpniętych z tradycji zachodniego boksu, do dziś zawody muay thai odbywają się z towarzyszeniem tradycyjnej muzyki. Popularność sportu jest ogromna, a udział w walkach to dla wielu Tajów sposób na zarobek. Trenują nie tylko mężczyźni, ale i kobiety oraz dzieci. Pojedynki odbywają się zarówno na poziomie zawodowym, jak i amatorskim. Cechą stylu amatorskiego jest noszenie przez zawodników ochraniaczy na głowę, korpus i kolana.
+
+        </p>
+        <a id="techniki"><h2 class="naglowek">Techniki</h2></a>
+        <p class="artykul_2">
+            Tajski boks to sport walki typu full-contact, czyli taki, w którym uderzenia zadaje się z maksymalną siłą. Zadawanie bólu przeciwnikowi jest nieodłączną częścią każdego pojedynku (zwłaszcza w formule profesjonalnej). Tak jak w zwykłym boksie, stosuje się ciosy pięściami (proste, sierpowe, podbródkowe), ale dodatkowo zawodnicy mogą używać nóg i łokci. To właśnie uderzenia tymi częściami ciała są najbardziej bolesne. Bokserzy muszą cały czas być przygotowani na niespodziewany cios kolanem zadany w żebra albo trafienie łokciem prosto w twarz.Stosuje się także różne rodzaje kopnięć, m.in. kopnięcia okrężne za pomocą golenia lub stopy, które można zadać w udo, w bok albo w głowę przeciwnika. Ponadto zawodnicy muay thai często walczą w klinczu, tzn. zakładają sobie ramiona za głowę i trzymają za kark. W zwarciu najważniejsze jest, aby przeciwnik nie dał rady pociągnąć naszej głowy w dół, bo wtedy cios kolanem w twarz wyprowadzony od dołu może być nokautujący.
+        </p>
+        <div id="slajder"></div><br />
+        <div class="galeria">
+            <span onclick="ustaw_slajd(1)"><img src="img/slajd1.jpg" width="100" height="70" title="High-kick" /></span>
+            <span onclick="ustaw_slajd(2)"><img src="img/slajd2.jpg" width="100" height="70" title="Klincz" /></span>
+            <span onclick="ustaw_slajd(3)"><img src="img/slajd3.jpg" width="100" height="70" title="Kolano" /></span>
+            <span onclick="ustaw_slajd(4)"><img src="img/slajd4.jpg" width="100" height="70" title="Łokieć" /></span>
+            <span onclick="ustaw_slajd(5)"><img src="img/slajd5.jpg" width="100" height="70" title="High-kick no.2" /></span>
+        </div><br /><br />
+        <a id="efekty"><h2 class="naglowek">Efekty</h2></a>
+        <p class="artykul_2">
+            Trenując muay thai można wzmocnić wszystkie mięśnie ciała i wyrzeźbić sylwetkę. U bokserów widać często dobrze rozbudowane ramiona i kark, które muszą być mocne, aby nie dać się sprowadzić do klinczu. Wyrabia się także zwinność, gibkość oraz refleks, ponieważ ten styl walki wymaga bardzo szybkiej reakcji obronnej – jeden fałszywy ruch i można otrzymać niespodziewany cios kolanem albo łokciem. Tajski boks pozwala także na skuteczną utratę tkanki tłuszczowej, ponieważ łączy w sobie elementy treningu siłowego i aerobowego. Jedna sesja treningowa trwa zazwyczaj ok. 60-90 minut, podczas których cały czas jest się w ruchu – dzięki temu można spalić mnóstwo kalorii.<br /><br />
+        </p>
+    </article>
+    <footer>
+        <div id="zegar"></div>
+    </footer>
+    <div id="bibliografia">
+        Treść strony została zaczerpnięta z artykułu: <a href="https://wformie24.poradnikzdrowie.pl/treningi/sztuki-walki/tajski-boks-historia-technika-i-efekty-trenowania-muay-thai-aa-zs9y-HJWC-ojje.html" target="_blank" onclick="ile_wejsc()">Tajski boks – historia, technika i efekty trenowania muay thai</a>
+    </div>
+</body>
+</html>

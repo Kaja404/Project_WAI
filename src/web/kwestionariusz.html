@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Muay Thai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="Stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body onload="odliczanie()">
+    <header>
+        <a href="index.html" id="poczatek_str"><h1>Muay Thai</h1></a>
+    </header>
+    <br />
+    <menu>
+        <ol>
+
+            <li><a href="specyfika.html" class="link">Historia</a></li>
+            <li><a href="specyfika.html#wspolczesnie" class="link">Współcześnie</a></li>
+            <li><a href="specyfika.html#techniki" class="link">Technika</a></li>
+            <li><a href="specyfika.html#efekty" class="link">Efekty</a></li>
+            <li><a href="index.php" class="link">Galeria</a></li>
+            <li>
+                <a href="#">Zacznij już dziś!</a>
+                <ul>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="https://www.google.com/maps/search/muay+thai/@54.373558,18.6067542,14z/data=!3m1!4b1" target="_blank">Kluby w pobliżu</a></li>
+                    <li><a href="kwestionariusz.html">Kwestionariusz</a></li>
+                </ul>
+            </li>
+        </ol>
+        <br />
+        <br />
+    </menu>
+    <article>
+        <div id="ankieta">
+            <h2 class="naglowek">Czy Muay Thai jest dla mnie?</h2>
+            <form action="*" id="pytania">
+                <img src="img/MT_6.png" width="250" height="250" class="img_3" />
+                Płeć:<br />
+                <lebel for="female">Kobieta</lebel>
+                <input type="radio" name="plec" id="female" value="female" />
+                <label for="male">Mężczyzna</label>
+                <input type="radio" name="plec" id="male" value="male" /><br />
+                Wiek:<input type="text" name="wiek" class="input" />lat<br />
+                Wzrost:<input type="text" name="wzrost" class="input" />cm<br />
+                Waga:<input type="text" name="waga" class="input" />kg<br />
+                <div id="bmi">BMI</div>
+                Poziom aktywności:<br />
+                <select name="aktywnosc">
+                    <option>wybierz poziom atywności</option>
+                    <option>Brak</option>
+                    <option>1-3 h/tydzień</option>
+                    <option>4-6 h/tydzień</option>
+                    <option>7-14 h/tydzień</option>
+                    <option>więcej</option>
+                </select><br />
+                Tryb pracy:<br />
+                <select>
+                    <option>określ tryb pracy</option>
+                    <option>Siedząca</option>
+                    <option>Fizyczna</option>
+                    <option>Umiarkowana aktywność</option>
+                </select><br />
+                Które z poniższych zauważasz u siebie:<br />
+                <input type="checkbox" name="stres" />Ciągly stres<br />
+                <input type="checkbox" name="koordynacja" />Słaba koordynacja ruchowa<br />
+                <input type="checkbox" name="rozciagniecie" />Niska mobilność ciała<br />
+                <input type="checkbox" name="kondycja" />Znikoma kondycja<br />
+                <input type="checkbox" name="p_siebie" />Brak pewności siebie<br />
+                Obawy:<br />
+                <textarea rows="7" cols="80"></textarea><br />
+                <input type="submit" value="Sprawdź" onclick="ankieta()" />
+                <input type="reset" />
+                <a href="#ankieta"><input type="button" value="Początek ankiety" /></a>
+            </form>
+        </div>
+    </article>
+    <footer>
+        <div id="zegar"></div>
+    </footer>
+    <div id="bibliografia">
+        Treść strony została zaczerpnięta z artykułu: <a href="https://wformie24.poradnikzdrowie.pl/treningi/sztuki-walki/tajski-boks-historia-technika-i-efekty-trenowania-muay-thai-aa-zs9y-HJWC-ojje.html" target="_blank">Tajski boks – historia, technika i efekty trenowania muay thai</a>
+    </div>
+</body>
+
+
+</html>
